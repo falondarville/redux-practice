@@ -39,13 +39,18 @@ class PostForm extends Component {
 					<div>
 						<label>Title: </label>
 						<br />
-						<input type="text" name="title" value={this.state.title} onChange={this.onChange}/>
+						<input type="text" 
+							name="title" 
+							value={this.state.title} 
+							onChange={this.onChange}/>
 					</div>
 					<br />
 					<div>
 						<label>Body: </label>
 						<br />
-						<textarea name="body" value={this.state.body} onChange={this.onChange}/>
+						<textarea name="body" 
+							value={this.state.body} 
+							onChange={this.onChange}/>
 					</div>
 					<br />
 					<button type="submit">Submit</button>
