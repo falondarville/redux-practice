@@ -9,7 +9,7 @@ export default class Posts extends Component {
 		}
 	}
 
-	componentWillMount(){
+	componentDidMount(){
 		fetch('https://jsonplaceholder.typicode.com/posts')
 		.then(res => res.json())
 		.then(data => this.setState({ posts: data }))
