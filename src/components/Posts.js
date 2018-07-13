@@ -5,8 +5,9 @@ import { fetchPosts } from '../actions/postActions';
 
 class Posts extends Component {
 
-	componentDidMount(){
-		fetchPosts();
+	// deprecated
+	componentWillMount(){
+		this.props.fetchPosts();
 	}
 
 	// deprecated 
